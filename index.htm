@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Gilded Razor - Barber Management</title> 
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+    <!-- Header and Navigation -->
+    <header>
+        <div class=" nav-bar ">The Gilded <br>Razor</div>
+       <div class="search">
+    <input type="text" id="searchInput" class="search-bar"  placeholder="🔍 Search services...">
+    <button id="searchBtn" class="search-btn">🔍</button>
+</div>
+        <nav>
+
+            <div class="navitem">
+                <ul class="flex space-x-8 text-gray-300 font-semibold">
+                    <li><a href="#services" >Services</a></li>
+                    <li><a href="#appointment" >Book Now</a></li>
+                    <li><a href="#gallery" >Gallery</a></li>
+                    <li><a href="#contact" >Contact</a></li>
+                    <div class="login">
+    <button id="loginBtn">Login</button>
+</div>
+
+                   
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+
+        <section id="home"
+            class=" hero-section ">
+
+            
+                <h1
+                    class="hero-title ">
+                    The Art of Grooming
+                </h1>
+                <p class="hero-subtitle ">
+                    Where tradition meets modernity. Experience a cut above the rest.
+                </p>
+                <button class="button-hero"> <a href="#appointment">
+                        Book an Appointment
+                    </a>
+                </button>
+         
+
+        </section>
+        <marquee behavior="" direction=""  onmouseover="this.stop();" onmouseout="this.start();">
+            <div id="corner" class="nav-bar">
+                Are You Boring.
+            </div>
+            <a href="inedx2.htm" class="game-button">PLAY GAME</a>
+
+        </marquee>
+        <div class="login-container">
+            <div class="cancel-div"><button class="cancel-button">X</button></div>
+            <h2>Login The Gilded Razor..</h2>
+            <form id="loginForm">
+                <div class="input-group">
+                    <label for="username">Username</label>
+                    <input type="text" id="username" placeholder="Enter username" required>
+                </div>
+
+                <div class="input-group">
+                    <label for="password">Password</label>
+                    <input type="password" id="password" placeholder="Enter password" required>
+                </div>
+
+                <button type="submit" class="button-form">Login</button>
+            </form>
+
+            <p id="message"></p>
+        </div>
+
+
+<div class="search-controls" style="display:none;">
+  <input type="text" id="searchInput" placeholder="Search here..." />
+  <button id="searchBtn">Search</button>
+  <button id="clearSearch">Clear</button>
+  <button id="backSearch">Back</button>
+</div>
+<p id="noResult" style="display:none;">No results found.</p>
+
+
+
+
+
+        <!-- Services Section -->
+        <section id="services" class=" section-padding ">
+            <div class="filter-container ">
+                <h2 >Our Services</h2>
+                <div class="container-list ">
+                    <!-- Service Card 1 -->
+                    <div class="container-item  ">
+                        <h3>Classic Haircut</h3>
+                        <p >Precision cuts tailored to your style. Includes a hot towel
+                            finish.</p>
+                        <p >$35</p>
+                    </div>
+                    <!-- Service Card 2 -->
+                    <div class="  container-item ">
+                        <h3 >Traditional Shave</h3>
+                        <p >An old-fashioned, straight razor shave for the closest possible
+                            result.</p>
+                        <p >$45</p>
+                    </div>
+                    <!-- Service Card 3 -->
+                    <div class="container-item ">
+                        <h3 >Beard Trim & Shape</h3>
+                        <p >Expert shaping and trimming to keep your beard looking sharp.</p>
+                        <p >$25</p>
+                    </div>
+                    <!-- Service Card 4 -->
+                    <div class=" container-item ">
+                        <h3 >Head Shave</h3>
+                        <p >Smooth and clean head shave with a straight razor and soothing
+                            aftershave.</p>
+                        <p >$40</p>
+                    </div>
+                    <!-- Service Card 5 -->
+                    <div class="container-item ">
+                        <h3 >Facial Treatment</h3>
+                        <p >Rejuvenating facial to cleanse, exfoliate, and moisturize your
+                            skin.</p>
+                        <p >$50</p>
+                    </div>
+                    <!-- Service Card 6 -->
+                    <div class="container-item ">
+                        <h3 >Gentleman's Package</h3>
+                        <p >Includes a classic haircut, shave, and a complimentary beverage.
+                        </p>
+                        <p >$90</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Appointment Section -->
+        <section id="appointment" class="contact-form">
+            <div class="container ">
+                <h2 >Book Your Appointment</h2>
+                <form id="appointment-form" >
+                    <div class="form-field ">
+                        <label for="name" class="block ">Full Name</label>
+                        <input type="text" id="name" name="name">
+                    </div>
+                    <div class="form-field ">
+                        <label for="email" class="block ">Email Address</label>
+                        <input type="email" id="email" name="email">
+                    </div>
+                    <div class="form-field ">
+                        <label for="service" class="block ">Service</label>
+                        <select id="service" name="service">
+                            <option value="">Select a service...</option>
+                            <option value="haircut">Classic Haircut</option>
+                            <option value="shave">Traditional Shave</option>
+                            <option value="trim">Beard Trim & Shape</option>
+                            <option value="headshave">Head Shave</option>
+                            <option value="facial">Facial Treatment</option>
+                            <option value="package">Gentleman's Package</option>
+                        </select>
+                    </div>
+                    <div class="form-field ">
+                        <label for="date" class="block ">Date</label>
+                        <input type="date" id="date" name="date">
+                    </div>
+                    <div class="form-field ">
+                        <label for="time" class="block ">Time</label>
+                        <input type="time" id="time" name="time">
+                    </div>
+                    <div class="text-center">
+                        <button type="submit"
+                            class="button">
+                            Confirm Appointment
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </section>
+
+        <!-- Gallery Section -->
+        <section id="gallery" class="gellery-section ">
+            <div class="container">
+                <h2 >Our Work</h2>
+                <div >
+                    <img src="a.jpg" alt="Barber Cut 1"
+                        class="rounded-lg ">
+                    <img src="b.jpg" alt="Barber Shave 2"
+                        class="rounded-lg ">
+                    <img src="c.jpg" alt="Barber Beard Trim 3"
+                        class="rounded-lg ">
+
+                    <img src="d.jpg" alt="Barber Fade 4"
+                        class="rounded-lg ">
+                    <img src="a.jpg" alt="Barber Cut 1" class="rounded-lg ">
+                    <img src="a.jpg" alt="Barber Cut 1" class="rounded-lg ">
+                    <img src="a.jpg" alt="Barber Cut 1" class="rounded-lg ">
+                    <img src="a.jpg" alt="Barber Cut 1" class="rounded-lg ">
+                    <img src="a.jpg" alt="Barber Cut 1" class="rounded-lg ">
+                    <img src="a.jpg" alt="Barber Cut 1" class="rounded-lg ">
+                    <img src="a.jpg" alt="Barber Cut 1" class="rounded-lg ">
+                    <button class="button" id="price-btn">more..</button>
+                    
+                </div>
+            </div>
+        </section>
+        <section id="gallery" class="section-padding">
+            
+            <section id="image-carousel" class="splide" aria-label="Adoptable Animals Carousel">
+                <h2>Our Team Member ..</h2>
+                <div class="splide__track">
+                    <ul class="splide__list">
+                        <li class="splide__slide">
+                            <img src="nikky.jpg" alt="Happy sperrow">
+                            <div class="slide-caption">NIKKY - A playful Specialist</div>
+                        </li>
+                        <li class="splide__slide">
+                            <img src="him.jpg" alt="Curious Cat">
+                            <div class="slide-caption">HIM - Loves cuddles</div>
+                        </li>
+                        <li class="splide__slide">
+                            <img src="dileep.webp" alt="Cute Rabbit">
+                            <div class="slide-caption">DILEEP- Energetic bunny</div>
+                        </li>
+                        <li class="splide__slide">
+                            <img src="manish.jpg" alt="Colorful Bird">
+                            <div class="slide-caption">MANI- Power House</div>
+                        </li>
+                        <li class="splide__slide">
+                            <img src="pikachu.jpg" alt="Friendly Dog">
+                            <div class="slide-caption">PIKACHU- TAPER Specialist</div>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+        </section>
+
+        <!-- Footer -->
+        <div id="contact" class=" gellery-section ">
+            <h2 >Visit Us</h2>
+            <div class="hero-title ">
+
+                <p >The Gilded Razor,near D.S College ,Aligarh (202125)</p>
+                <p >Phone: (+91) 8475-9307-01</p>
+                <p >Email: manish847593@gmail.com</p>
+                <div class=" hero-subtitle  ">
+                    <a href="#" >
+                        <!-- Placeholder SVG for Social Media Icon -->
+                        <svg  fill="currentColor" viewBox="0 0 24 24">
+                            <path
+                                d="M12 2.163c3.204 0 3.584.012 4.85.07c3.252.148 4.604 1.834 4.75 4.75.058 1.266.07 1.646.07 4.85s-.012 3.584-.07 4.85c-.146 2.916-1.832 4.602-4.75 4.75-1.266.058-1.646.07-4.85.07s-3.584-.012-4.85-.07c-2.918-.148-4.604-1.834-4.75-4.75-.058-1.266-.07-1.646-.07-4.85s.012-3.584.07-4.85c.146-2.916 1.832-4.602 4.75-4.75 1.266-.058 1.646-.07 4.85-.07zm0-2.163c-3.636 0-4.079.014-5.461.082-3.525.163-5.267 2.03-5.43 5.43-.068 1.382-.082 1.825-.082 5.461 0 3.636.014 4.079.082 5.461.163 3.525 2.03 5.267 5.43 5.43 1.382.068 1.825.082 5.461.082 3.636 0 4.079-.014 5.461-.082 3.525-.163 5.267-2.03 5.43-5.43.068-1.382.082-1.825.082-5.461 0-3.636-.014-4.079-.082-5.461-.163-3.525-2.03-5.267-5.43-5.43-1.382-.068-1.825-.082-5.461-.082zm.112 11.233c-2.458 0-4.45 1.992-4.45 4.45s1.992 4.45 4.45 4.45 4.45-1.992 4.45-4.45-1.992-4.45-4.45-4.45zm0 7.337c-1.597 0-2.887-1.29-2.887-2.887s1.29-2.887 2.887-2.887 2.887 1.29 2.887 2.887-1.29 2.887-2.887 2.887zm6.54-7.38c0 .878-.712 1.59-1.59 1.59s-1.59-.712-1.59-1.59.712-1.59 1.59-1.59 1.59.712 1.59 1.59z" />
+                        </svg>
+                    </a>
+                    <a href="#" >
+                        <!-- Placeholder SVG for Social Media Icon -->
+                        <svg  fill="currentColor" viewBox="0 0 24 24">
+                            <path
+                                d="M22.25 4.371a7.828 7.828 0 0 1-2.288.625 4.452 4.452 0 0 0 1.954-2.204 8.783 8.783 0 0 1-2.545.975 4.394 4.394 0 0 0-7.494 4.01A12.42 12.42 0 0 1 3.4 4.088a4.394 4.394 0 0 0 1.365 5.861 4.376 4.376 0 0 1-1.99-.55 4.397 4.397 0 0 0 3.52 4.316 4.394 4.394 0 0 1-1.988.077 4.394 4.394 0 0 0 4.096 3.055 8.805 8.805 0 0 1-5.454 1.884c-.354 0-.705-.02-.056-.003A12.454 12.454 0 0 0 22.25 4.371z" />
+                        </svg>
+                    </a>
+                </div>
+
+            </div>
+            <marquee behavior="" direction="">
+                <p class="text-sm text-gray-600 mt-8">© 2025 The Gilded Razor.
+                    <hr> Thanku For Visit.
+                </p>
+            </marquee>
+        </div>
+    </main>
+
+
+    <!-- Newsletter Section -->
+    <section class="newsletter">
+        <h2>Subscribe Our Newsletter</h2>
+        <p>There are many variations of passages of Lorem Ipsum available.</p>
+        <div class="newsletter-box">
+            <input type="email" placeholder="Enter Email Address">
+            <button>Subscribe Now</button>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-container">
+
+            <!-- Left Section -->
+            <div class="footer-about">
+                <img src="logo.jpg" alt="logo" class="logo">
+                <h3>The Gilded Razor</h3>
+                <p>Barber Shop</p>
+                <p>Mr. Barber brings to India an avant-garde range of hair styling accessories & equipment adhering to
+                    international quality & standards.
+                    We hold the vision to inspire hairstyling creativity and education with our exclusive line of
+                    professional hairstyling brushes,
+                    straighteners, curling tongs, dryers, crimpers, scissors, brushes, combs, and essentials.</p>
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+
+            <!-- Useful Links -->
+            <div class="footer-links">
+                <h4>Useful Links</h4>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Shop</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Blog & News</a></li>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Contact</a></li>
+                    <li><a href="#">Members</a></li>
+                    <li><a href="#">Appointments</a></li>
+                    <li><a href="#">Gallery Style</a></li>
+                </ul>
+            </div>
+
+            <!-- Twitter Posts -->
+            <div class="footer-twitter">
+                <h4>Twitter Post</h4>
+                <div class="tweet">
+                    <i class="fab fa-twitter"></i>
+                    <p><strong>Black-one</strong> @devsnetllc<br>Typesetting industry. Lorem our Ipsum has been the indu
+                    </p>
+                </div>
+                <div class="tweet">
+                    <i class="fab fa-twitter"></i>
+                    <p><strong>Haircutting</strong> @devsnetllc<br>Typesetting industry. Lorem our Ipsum has been the
+                        indu</p>
+                </div>
+            </div>
+
+            <!-- Contact Us -->
+            <div class="footer-contact">
+                <h4>Contact Us</h4>
+                <p><i class="fa "></i> (+323) 750-1234</p>
+                <p><i class="fa "></i> infoyourcentecy@gmail.com</p>
+                <p><i class="fa "></i> 374 FA Tower, William S Blvd, Melbourne 2721, IL USA</p>
+            </div>
+        </div>
+
+        <!-- Bottom Bar -->
+        <div class="footer-bottom">
+            <p>2023 © All rights reserved by <span>devsnet-llc</span></p>
+            <div>
+                <a href="#">Privacy Policy</a> |
+                <a href="#">Terms & Conditions</a>
+            </div>
+        </div>
+    </footer>
+
+    
+       
+<script src="scriptb.js"></script>
+
+
+</body>
+
+</html>
