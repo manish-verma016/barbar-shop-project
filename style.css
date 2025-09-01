@@ -1,3 +1,7 @@
+
+html{
+  width: fit-content;
+}
 body {
   font-family: 'Inter', sans-serif;
   background-color: #1a1a1a;
@@ -978,4 +982,5 @@ button:active::after,
 #backSearch:hover {
   background: #222;
 }
+
 
