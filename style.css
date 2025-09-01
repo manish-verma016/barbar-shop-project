@@ -10,6 +10,7 @@ body {
   overflow-x: hidden;
   /* Prevents horizontal scroll from animations */
   text-decoration: none;
+  width: auto;
 }
 
 .modal-overlay {
@@ -982,5 +983,6 @@ button:active::after,
 #backSearch:hover {
   background: #222;
 }
+
 
 
